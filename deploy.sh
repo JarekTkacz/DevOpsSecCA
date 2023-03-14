@@ -7,7 +7,7 @@ sudo apt update && sudo apt install nodejs npm
 sudo npm install -g pm2
 
 # stop any instance of our application running currently
-pm2 stop DevOpsSecCA_app
+pm2 stop example_app
 
 # change directory into folder where application is downloaded
 cd DevOpsSecCA/
@@ -19,4 +19,4 @@ npm install
 # echo $SERVER > server.crt
 
 # Start the application with the process name example_app using pm2
-pm2 start ./bin/www --name DevOpsSecCA_app
+pm2 start ./bin/www --name example_app
